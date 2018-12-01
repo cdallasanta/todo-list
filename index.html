@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>To-do List</h1>
+    </header>
+    <input type="textbox" id="todo-input" onkeyup="handlers.todoInput()">
+    
+    <div id="button-div">
+      <button onclick="handlers.deleteAll()">Delete All Items</button>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+      <button onclick="handlers.removeCompleted()">Remove Completed</button>
+    </div>
+    
+
+    <ol id="outputList">
+    </ol>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
